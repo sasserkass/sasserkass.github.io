@@ -1,0 +1,159 @@
+* {box-sizing:border-box;}
+
+
+body {background-color: #233f5c; color: #e9eff4; 
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0; padding: 0;
+}
+
+header {
+    background: #233f5c;
+    padding: 10%;
+    background-image:url(FFTMimages/fireflies2.jpg); background-repeat: repeat;
+    border: none;
+    text-align: center;
+}
+h1 {font-size: 350%;}
+
+header a:link{ text-decoration: none; color:#e9eff4;}
+header a:visited{ text-decoration: none; color:#e9eff4;}
+
+header a:hover {color: #fffa7f; transition: color 1s linear;}
+
+video {margin-left: 5em;}
+    
+form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 6em 1fr;
+        grid-gap: 1em; gap: 1em;
+        background-color: #233f5c;
+        width: 80%; min-width: 20em;
+        padding: 2em; }
+
+    input[type="submit"] {grid-column: 2/3; width: 10em; 
+        margin-left:0; color:#496f98; font-weight: bold;}
+
+    #container {box-shadow: 5px 5px 5px #fffa7f; 
+                text-shadow: 3px 3px 3px #496f98; }
+
+    #wrapper { width: 80%;
+            margin: auto;
+            background-color: #496f98;
+            padding: 3em; }
+            
+    
+    #tattoohero { height: 300px; background-color: #496f9a; 
+        background-image: url(FFTMimages/tattoo2.jpg);
+        background-size: 100 100; background-repeat: no-repeat; 
+        background-position: center;}
+
+table { margin: auto; 
+            border: 5px solid #233f5c; 
+            width: 80%; 
+            text-align: left;
+            border-spacing: 0; border-collapse: collapse;
+    }
+    th { padding: 5px; 
+        font-family: Arial, sans-serif;
+        border-style: none;
+        color: #233f5c;
+        font-weight: bold;
+        font-size: larger;
+}
+    td { padding: 5px; 
+             font-family: Arial, sans-serif;
+             border-style: none;
+             color: #233f5c;
+             font-weight: bold;
+    }
+    caption { font-family: Verdana, sans-serif; 
+              font-weight: bold;
+              font-size: 1.2em; 
+              padding-bottom: 5px; 
+    }
+    tr:nth-of-type(odd) { background-color:#e9eff4;}
+    tr:nth-of-type(even) {background-color: #a3bedc;}
+    tr:first-of-type { background-color: #fffa7a;
+                       color: #e9eff4; }
+
+nav {list-style-type: none; display: inline;}
+
+nav a { color: #e9effa; 
+    text-decoration: none;
+    padding-right: 10px;}
+
+nav ul { list-style-type: none; text-align: center;
+        font-size: 1.5em; margin:5px; }
+
+nav a:link {color:#e9eff4;}
+nav a:visited { color: #e9eff4;}
+nav a:hover { color:#fffa7f;}
+
+h2 { color: #e9effa; text-align: center;} 
+
+h3 { text-align: center;}
+
+h4 { color:#233f5c}
+
+ul { list-style-type: square; font-weight: bold;}
+ 
+li { font-size: 80%; font-weight: bold}
+
+section {
+    background: #496f9a;
+    color: #e9effa;
+    padding: 20px;}
+
+    .features {background: #496f9a;
+        color: #e9effa;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+
+    .features figure {text-align: center;
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+            width: 200px; }
+
+    .features figure img {border-radius: 10px;
+        border-style: ridge; 
+        border-color:  #233f5c;}
+
+    .features figure img:hover {
+        opacity: 0.5;
+        transition: 250ms linear
+        }
+
+footer {
+    background: #233f5c; color: #fffa7f; text-align: center; font-size:small;
+    padding: 10px 20px;
+}
+iframe { width: 80%; min-width: 20em; max-width: 560px ;
+        height: 80%; min-height: 20em;}
+
+
+@media (min-width:  400px) {
+    nav li {display: inline-block;
+        width: 9em;
+        padding: 0.5em;
+        border: none}
+    nav ul {text-align: center; }
+    footer{clear:both;}
+    video{ display: inline-block; width: 360px; height: 240px; 
+        justify-content: center;
+    }
+}
+
+@media (min-width: 900px) {
+    nav li {display: inline-block;}
+    body { background-color: #233f5c; }
+    section { display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;}
+    video{ display: flex; width: 480px; height: 340px; 
+            margin: auto;
+        }
+}
